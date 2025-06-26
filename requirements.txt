@@ -1,2 +1,10 @@
-fastapi uvicorn langchain langgraph openai streamlit llama-index
-pinecone-client sqlalchemy psycopg[binary] unstructured helicone
+fastapi
+uvicorn
+langchain
+langgraph
+openai
+streamlit
+llama-index
+pinecone-client
+sqlalchemy
+helicone
