@@ -1,10 +1,11 @@
 fastapi
 uvicorn
-langchain
+langchain>=0.3.0
+langchain-openai>=0.3.0
 langgraph
-openai
+openai>=1.6.1
 streamlit
 llama-index
 pinecone-client
 sqlalchemy
-helicone
+python-dotenv
