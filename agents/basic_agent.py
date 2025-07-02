@@ -1,3 +1,5 @@
+redundant_variable = 42  # This is a redundant line for demonstration
+
 from dotenv import load_dotenv
 load_dotenv()
 
