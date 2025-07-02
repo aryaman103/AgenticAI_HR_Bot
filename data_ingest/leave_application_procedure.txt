@@ -1,0 +1,31 @@
+Title: Leave Application Procedure – 2025
+
+Effective Date: January 1, 2025
+
+Purpose:
+This guide explains the steps to apply for paid or unpaid leave using the company's HR portal.
+
+1. Types of Leave Available:
+   - Earned Leave (EL)
+   - Casual Leave (CL)
+   - Sick Leave (SL)
+   - Bereavement Leave
+   - Unpaid Leave
+
+2. How to Apply:
+   - Step 1: Visit the HR Portal: hr.companyname.com
+   - Step 2: Login using your company credentials
+   - Step 3: Go to: Time Off > Apply for Leave
+   - Step 4: Select the leave type, start date, and end date
+   - Step 5: Add a reason or note (optional)
+   - Step 6: Click "Submit for Approval"
+
+3. Approval Process:
+   - Your manager will receive a notification and must approve within 48 hours.
+   - You will receive a confirmation email once your request is approved or rejected.
+
+4. Notes:
+   - Leave should be applied at least 3 days in advance, except in emergencies.
+   - Ensure project deliverables are communicated before leave begins.
+
+For further assistance, please email: leave-coordinator@companyname.com. 

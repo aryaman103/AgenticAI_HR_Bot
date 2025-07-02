@@ -1,0 +1,14 @@
+Title: US Holiday Calendar – 2025
+
+Day   Date      Holiday
+Wed   01 Jan    New Year
+Mon   26 May    Memorial Day
+Fri   04 Jul    Independence Day
+Mon   01 Sep    Labor Day
+Thu   27 Nov    Thanksgiving
+Fri   28 Nov    Day after Thanksgiving
+Wed   25 Dec    Christmas
+
+Plus three floating holidays
+
+Associates deployed in customer locations will follow the customer holidays. In total, associates can avail a maximum of 10 days of holidays and floaters together. 

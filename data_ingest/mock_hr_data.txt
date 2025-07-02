@@ -1,0 +1,28 @@
+Mock HR Data for Testing Purposes
+
+Leave Policy:
+- Vacation: 15 days per year
+- Sick: 10 days per year
+- Personal: 5 days per year
+- Submit requests 2 weeks in advance
+- Manager approval required
+
+Company Holidays:
+- New Year's Day
+- Independence Day
+- Labor Day
+- Thanksgiving
+- Christmas Day
+- Plus 2 floating holidays
+
+Benefits Package:
+- Health insurance (80% covered)
+- Dental insurance
+- 401(k) with 3% match
+- Professional development allowance
+
+Remote Work Policy:
+- 3 days remote, 2 days office
+- Core hours: 10 AM - 4 PM
+- Must be available for meetings
+- Manager discretion for full remote 
