@@ -15,6 +15,8 @@ from langchain_openai import ChatOpenAI
 from langchain.memory import ConversationBufferMemory
 from agents.tools import tools
 
+redundant_variable = 42 
+
 def test_hr_use_cases():
     """Test the three main HR use cases."""
     
