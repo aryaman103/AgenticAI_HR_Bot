@@ -9,3 +9,13 @@ llama-index
 pinecone-client
 sqlalchemy
 python-dotenv
+
+# Document parsing dependencies
+unstructured
+pypdf
+python-docx
+python-magic
+
+# Additional utilities
+uuid
+dataclasses
