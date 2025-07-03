@@ -29,7 +29,7 @@ try:
         return "\n".join([r.get_content() for r in results])
     tools.append(
         Tool(
-            name="KnowledgeBase",
+            name = "KnowledgeBase",
             func=knowledge_base_tool,
             description="Semantic search over HR documents (leave application, leave balance, holidays, etc.)."
         )
