@@ -1,0 +1,15 @@
+[
+  {
+    "timestamp": "2025-07-07T11:50:27.427553",
+    "session_id": "test_session_123",
+    "user_query": "How do I apply for leave?",
+    "bot_response": "To apply for leave, visit the HR portal...",
+    "rating": 4,
+    "feedback_text": "Very helpful response!",
+    "escalation_triggered": false,
+    "tools_used": [
+      "KnowledgeBase"
+    ],
+    "response_time": 1.2
+  }
+]

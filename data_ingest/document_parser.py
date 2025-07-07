@@ -7,11 +7,7 @@ import os
 from pathlib import Path
 from typing import List, Dict, Any
 from llama_index.core import Document
-from llama_index.readers.file import (
-    PDFReader,
-    DocxReader,
-    SimpleDirectoryReader
-)
+from llama_index.readers.file.unstructured import UnstructuredReader
 
 class HRDocumentParser:
     """Parser for HR documents with support for multiple formats."""
@@ -19,6 +15,7 @@ class HRDocumentParser:
     def __init__(self, data_dir: str = "./data_ingest"):
         self.data_dir = Path(data_dir)
         self.supported_extensions = {'.pdf', '.docx', '.txt', '.md'}
+        self.reader = UnstructuredReader()
     
     def parse_document(self, file_path: str) -> Document:
         """Parse a single document based on its extension."""
@@ -31,21 +28,11 @@ class HRDocumentParser:
             raise ValueError(f"Unsupported file type: {file_path.suffix}")
         
         try:
-            if file_path.suffix.lower() == '.pdf':
-                reader = PDFReader()
-                documents = reader.load_data(file_path)
-            elif file_path.suffix.lower() == '.docx':
-                reader = DocxReader()
-                documents = reader.load_data(file_path)
-            else:  # .txt, .md
-                reader = SimpleDirectoryReader()
-                documents = reader.load_data(str(file_path))
-            
+            documents = self.reader.load_data(str(file_path))
             if documents:
                 return documents[0]
             else:
                 raise ValueError(f"No content extracted from {file_path}")
-                
         except Exception as e:
             print(f"Error parsing {file_path}: {e}")
             raise

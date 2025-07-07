@@ -19,3 +19,16 @@ python-magic
 # Additional utilities
 uuid
 dataclasses
+
+# Testing and UI dependencies
+pytest
+pytest-asyncio
+httpx
+plotly
+pandas
+numpy
+
+# Development tools
+black
+flake8
+mypy
