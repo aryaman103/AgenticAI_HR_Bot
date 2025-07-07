@@ -1,4 +1,5 @@
 import re
+import datetime
 
 # 1. Confidence-based escalation
 def should_escalate_confidence(confidence: float, threshold: float = 0.5) -> bool:
@@ -53,9 +54,17 @@ def should_escalate(
         should_escalate_loop(repeated_intent_count)
     )
 
-# Example escalation message
+# Improved escalation message
 def escalation_message():
     return (
-        "Let me connect you to an HR specialist for further help. "
-        "You will receive a response soon."
-    ) 
+        "Your request has been escalated to a human HR specialist. "
+        "An HR team member will review your query and reach out to you soon. "
+        "If this is urgent, you may also contact HR directly at hr-support@companyname.com."
+    )
+
+# Log escalation to a file for HR follow-up
+def log_escalation(session_id: str, user_input: str):
+    timestamp = datetime.datetime.now().isoformat()
+    log_entry = f"[{timestamp}] Session: {session_id} | Escalation: {user_input}\n"
+    with open("escalation_log.txt", "a") as f:
+        f.write(log_entry) 

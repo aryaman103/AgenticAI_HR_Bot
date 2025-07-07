@@ -9,7 +9,7 @@ from langchain.memory import ConversationBufferMemory
 from langchain_core.tools import Tool
 from agents.tools import tools
 from data_ingest.ingest import build_knowledge_base
-from agents.escalation import should_escalate, escalation_message
+from agents.escalation import should_escalate, escalation_message, log_escalation
 from feedback.feedback_collector import FeedbackCollector
 
 # 1. initialize the LLM
@@ -113,6 +113,7 @@ if __name__ == "__main__":
         ):
             bot_response = escalation_message()
             escalation_triggered = True
+            log_escalation(session_id, user_input)
             print(f"Bot: {bot_response}")
         else:
             response = agent.invoke({"input": user_input})
