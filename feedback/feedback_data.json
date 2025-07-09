@@ -35,5 +35,274 @@
     "escalation_triggered": false,
     "tools_used": [],
     "response_time": 0.7820422649383545
+  },
+  {
+    "timestamp": "2025-07-08T11:51:07.367794",
+    "session_id": "test_session",
+    "user_query": "Test query",
+    "bot_response": "Test response",
+    "rating": 4,
+    "feedback_text": "Test feedback",
+    "escalation_triggered": false,
+    "tools_used": [
+      "KnowledgeBase"
+    ],
+    "response_time": 1.0
+  },
+  {
+    "timestamp": "2025-07-08T11:51:07.371189",
+    "session_id": "test_session",
+    "user_query": "Test query",
+    "bot_response": "Test response",
+    "rating": 4,
+    "feedback_text": "Test feedback",
+    "escalation_triggered": false,
+    "tools_used": [
+      "KnowledgeBase"
+    ],
+    "response_time": 1.0
+  },
+  {
+    "timestamp": "2025-07-08T11:51:07.372522",
+    "session_id": "test_session",
+    "user_query": "Test query",
+    "bot_response": "Test response",
+    "rating": 3,
+    "feedback_text": "Test feedback",
+    "escalation_triggered": false,
+    "tools_used": [
+      "KnowledgeBase"
+    ],
+    "response_time": 1.0
+  },
+  {
+    "timestamp": "2025-07-08T11:51:07.372855",
+    "session_id": "test_session",
+    "user_query": "Test query",
+    "bot_response": "Test response",
+    "rating": 4,
+    "feedback_text": "Test feedback",
+    "escalation_triggered": false,
+    "tools_used": [
+      "KnowledgeBase"
+    ],
+    "response_time": 1.0
+  },
+  {
+    "timestamp": "2025-07-08T11:51:07.373156",
+    "session_id": "test_session",
+    "user_query": "Test query",
+    "bot_response": "Test response",
+    "rating": 5,
+    "feedback_text": "Test feedback",
+    "escalation_triggered": false,
+    "tools_used": [
+      "KnowledgeBase"
+    ],
+    "response_time": 1.0
+  },
+  {
+    "timestamp": "2025-07-08T11:51:07.373775",
+    "session_id": "session_0",
+    "user_query": "Test query",
+    "bot_response": "Test response",
+    "rating": 4,
+    "feedback_text": "Test feedback",
+    "escalation_triggered": false,
+    "tools_used": [
+      "KnowledgeBase"
+    ],
+    "response_time": 1.0
+  },
+  {
+    "timestamp": "2025-07-08T11:51:07.374114",
+    "session_id": "session_1",
+    "user_query": "Test query",
+    "bot_response": "Test response",
+    "rating": 4,
+    "feedback_text": "Test feedback",
+    "escalation_triggered": false,
+    "tools_used": [
+      "KnowledgeBase"
+    ],
+    "response_time": 1.0
+  },
+  {
+    "timestamp": "2025-07-08T11:51:07.374410",
+    "session_id": "session_2",
+    "user_query": "Test query",
+    "bot_response": "Test response",
+    "rating": 4,
+    "feedback_text": "Test feedback",
+    "escalation_triggered": false,
+    "tools_used": [
+      "KnowledgeBase"
+    ],
+    "response_time": 1.0
+  },
+  {
+    "timestamp": "2025-07-08T11:51:07.374705",
+    "session_id": "session_3",
+    "user_query": "Test query",
+    "bot_response": "Test response",
+    "rating": 4,
+    "feedback_text": "Test feedback",
+    "escalation_triggered": false,
+    "tools_used": [
+      "KnowledgeBase"
+    ],
+    "response_time": 1.0
+  },
+  {
+    "timestamp": "2025-07-08T11:51:07.375008",
+    "session_id": "session_4",
+    "user_query": "Test query",
+    "bot_response": "Test response",
+    "rating": 4,
+    "feedback_text": "Test feedback",
+    "escalation_triggered": false,
+    "tools_used": [
+      "KnowledgeBase"
+    ],
+    "response_time": 1.0
+  },
+  {
+    "timestamp": "2025-07-08T11:51:26.266543",
+    "session_id": "session_0",
+    "user_query": "Query 0",
+    "bot_response": "Response 0",
+    "rating": 5,
+    "feedback_text": null,
+    "escalation_triggered": false,
+    "tools_used": [
+      "KnowledgeBase"
+    ],
+    "response_time": 1.0
+  },
+  {
+    "timestamp": "2025-07-08T11:51:26.268718",
+    "session_id": "session_1",
+    "user_query": "Query 1",
+    "bot_response": "Response 1",
+    "rating": 4,
+    "feedback_text": null,
+    "escalation_triggered": false,
+    "tools_used": [
+      "KnowledgeBase"
+    ],
+    "response_time": 1.0
+  },
+  {
+    "timestamp": "2025-07-08T11:51:26.269859",
+    "session_id": "session_2",
+    "user_query": "Query 2",
+    "bot_response": "Response 2",
+    "rating": 3,
+    "feedback_text": null,
+    "escalation_triggered": true,
+    "tools_used": [
+      "KnowledgeBase"
+    ],
+    "response_time": 1.0
+  },
+  {
+    "timestamp": "2025-07-08T11:51:26.270953",
+    "session_id": "session_3",
+    "user_query": "Query 3",
+    "bot_response": "Response 3",
+    "rating": 5,
+    "feedback_text": null,
+    "escalation_triggered": false,
+    "tools_used": [
+      "KnowledgeBase"
+    ],
+    "response_time": 1.0
+  },
+  {
+    "timestamp": "2025-07-08T11:51:26.271748",
+    "session_id": "session_4",
+    "user_query": "Query 4",
+    "bot_response": "Response 4",
+    "rating": 2,
+    "feedback_text": null,
+    "escalation_triggered": true,
+    "tools_used": [
+      "KnowledgeBase"
+    ],
+    "response_time": 1.0
+  },
+  {
+    "timestamp": "2025-07-08T11:51:26.273919",
+    "session_id": "test_session_123",
+    "user_query": "How do I apply for leave?",
+    "bot_response": "To apply for leave, visit the HR portal...",
+    "rating": 4,
+    "feedback_text": "Very helpful!",
+    "escalation_triggered": false,
+    "tools_used": [
+      "KnowledgeBase"
+    ],
+    "response_time": 1.5
+  },
+  {
+    "timestamp": "2025-07-08T11:51:26.275056",
+    "session_id": "test_session_456",
+    "user_query": "I need to report harassment",
+    "bot_response": "Your request has been escalated to a human HR specialist. An HR team member will review your query and reach out to you soon. If this is urgent, you may also contact HR directly at hr-support@companyname.com.",
+    "rating": 3,
+    "feedback_text": "Good escalation",
+    "escalation_triggered": true,
+    "tools_used": [],
+    "response_time": 0.5
+  },
+  {
+    "timestamp": "2025-07-08T11:51:27.396029",
+    "session_id": "e2e_test_session",
+    "user_query": "I need to report harassment in my department",
+    "bot_response": "Your request has been escalated to a human HR specialist. An HR team member will review your query and reach out to you soon. If this is urgent, you may also contact HR directly at hr-support@companyname.com.",
+    "rating": 3,
+    "feedback_text": "Appropriate escalation for sensitive topic",
+    "escalation_triggered": true,
+    "tools_used": [],
+    "response_time": 0.5
+  },
+  {
+    "timestamp": "2025-07-08T11:51:29.623639",
+    "session_id": "e2e_test_session",
+    "user_query": "When is the next company holiday?",
+    "bot_response": "The next company holiday is Labor Day, which will be on September 1, 2025, in 54 days.",
+    "rating": 5,
+    "feedback_text": "Great holiday information",
+    "escalation_triggered": false,
+    "tools_used": [
+      "CalendarAPI"
+    ],
+    "response_time": 2.226722240447998
+  },
+  {
+    "timestamp": "2025-07-08T11:51:35.073337",
+    "session_id": "e2e_test_session",
+    "user_query": "I want to apply for vacation next month. How do I do it?",
+    "bot_response": "To apply for vacation leave next month, follow these steps:\n\n1. Visit the HR Portal: [hr.companyname.com](http://hr.companyname.com).\n2. Log in using your company credentials.\n3. Navigate to: Time Off > Apply for Leave.\n4. Select the leave type (e.g., Earned Leave), start date, and end date for your vacation.\n5. Optionally, add a reason or note for your leave.\n6. Click \"Submit for Approval.\"\n\nYour manager will receive a notification and must approve your request within 48 hours. You will receive a confirmation email once your request is approved or rejected. Remember to apply for leave at least 3 days in advance, except in emergencies. If you need further assistance, you can email the leave coordinator at leave-coordinator@companyname.com.",
+    "rating": 4,
+    "feedback_text": "Clear guidance on leave application",
+    "escalation_triggered": false,
+    "tools_used": [
+      "KnowledgeBase"
+    ],
+    "response_time": 5.447413921356201
+  },
+  {
+    "timestamp": "2025-07-08T11:51:37.631176",
+    "session_id": "e2e_test_session",
+    "user_query": "How do I check my leave balance? I'm user123",
+    "bot_response": "To check your leave balance, log in to the HR portal at [hr.companyname.com](http://hr.companyname.com). Once logged in, navigate to: My Profile > Time Off > Leave Balance. There, you will find a breakdown of your Earned Leave (EL), Casual Leave (CL), Sick Leave (SL), and any carry-forward balances. If you have any questions, you can contact hr-support@companyname.com for assistance.",
+    "rating": 4,
+    "feedback_text": "Helpful response about leave balance",
+    "escalation_triggered": false,
+    "tools_used": [
+      "GetLeaveBalance"
+    ],
+    "response_time": 2.5542800426483154
   }
 ]
