@@ -133,12 +133,12 @@ if __name__ == "__main__":
                 
                 # Extract tools used from response (simplified)
                 tools_used = []
-                if "KnowledgeBase" in str(response):
-                    tools_used.append("KnowledgeBase")
-                if "GetLeaveBalance" in str(response):
-                    tools_used.append("GetLeaveBalance")
-                if "CalendarAPI" in str(response):
-                    tools_used.append("CalendarAPI")
+                tool_names = ["KnowledgeBase", "GetLeaveBalance", "CalendarAPI", 
+                             "BenefitsInfo", "OnboardingInfo", "PerformanceInfo",
+                             "HRDirectory", "PolicyInfo", "CompensationInfo"]
+                for tool in tool_names:
+                    if tool in str(response):
+                        tools_used.append(tool)
                 
                 feedback_collector.collect_feedback(
                     session_id=session_id,
