@@ -1,5 +1,6 @@
 from langchain_core.tools import Tool
 import datetime
+import re
 
 # Real holiday calendar from data_ingest/holiday_calendar.txt
 COMPANY_HOLIDAYS = [
@@ -12,6 +13,101 @@ COMPANY_HOLIDAYS = [
     {"date": "2025-12-25", "name": "Christmas"},
     # Plus three floating holidays
 ]
+
+# Employee benefits information
+def get_benefits_info(query: str) -> str:
+    query_lower = query.lower()
+    if "health" in query_lower or "medical" in query_lower:
+        return (
+            "Health Benefits: We offer comprehensive medical, dental, and vision coverage. "
+            "Premium plans include PPO and HMO options with low deductibles. "
+            "Annual enrollment period is October 1-31. Contact benefits@companyname.com for details."
+        )
+    elif "retirement" in query_lower or "401k" in query_lower:
+        return (
+            "Retirement Benefits: 401(k) plan with 6% company match, immediate vesting. "
+            "Also includes traditional and Roth IRA options. "
+            "Financial planning resources available through Fidelity."
+        )
+    elif "pto" in query_lower or "vacation" in query_lower:
+        return (
+            "PTO Policy: Unlimited PTO for full-time employees. "
+            "Minimum 3 weeks recommended annually. Manager approval required for 5+ consecutive days. "
+            "Public holidays are separate from PTO."
+        )
+    else:
+        return (
+            "Available benefits: Health/Medical, Dental, Vision, 401(k), Life Insurance, "
+            "Disability Coverage, Flexible Spending Account, Employee Assistance Program, "
+            "Professional Development Budget. Ask about specific benefits for details."
+        )
+
+# Employee onboarding assistance
+def get_onboarding_info(query: str) -> str:
+    query_lower = query.lower()
+    if "first day" in query_lower or "start" in query_lower:
+        return (
+            "First Day: Report to reception at 9 AM with ID and completed paperwork. "
+            "You'll receive laptop, badge, and office tour. "
+            "Lunch will be provided. Orientation sessions run until 4 PM."
+        )
+    elif "paperwork" in query_lower or "documents" in query_lower:
+        return (
+            "Required Documents: I-9 form, tax forms (W-4), direct deposit form, "
+            "emergency contacts, benefits enrollment forms. "
+            "Most forms are available in the employee portal: portal.companyname.com"
+        )
+    elif "equipment" in query_lower or "laptop" in query_lower:
+        return (
+            "Equipment Setup: Laptop, monitor, keyboard, mouse provided on first day. "
+            "IT will help with software installation and account setup. "
+            "Mobile phone provided if role requires. Contact it-support@companyname.com"
+        )
+    elif "training" in query_lower:
+        return (
+            "Training Schedule: Week 1 - Company orientation and compliance training. "
+            "Week 2 - Role-specific training with your manager. "
+            "Week 3-4 - Department integration and project assignments. "
+            "Learning management system: learn.companyname.com"
+        )
+    else:
+        return (
+            "Onboarding Support: First day logistics, required paperwork, equipment setup, "
+            "training schedule, mentor assignment. Ask about specific onboarding topics for details."
+        )
+
+# Performance review information
+def get_performance_info(query: str) -> str:
+    query_lower = query.lower()
+    if "schedule" in query_lower or "when" in query_lower:
+        return (
+            "Performance Review Schedule: Annual reviews in Q1 (January-March). "
+            "Mid-year check-ins in July. Quarterly 1:1s with manager. "
+            "30/60/90 day reviews for new hires."
+        )
+    elif "process" in query_lower or "how" in query_lower:
+        return (
+            "Review Process: Self-assessment, manager evaluation, peer feedback (360 review). "
+            "Goal setting for upcoming year. Performance rating scale: Exceeds/Meets/Below Expectations. "
+            "Results discussion meeting within 2 weeks of completion."
+        )
+    elif "goals" in query_lower or "objectives" in query_lower:
+        return (
+            "Goal Setting: SMART goals framework (Specific, Measurable, Achievable, Relevant, Time-bound). "
+            "3-5 key objectives per year. Quarterly progress reviews. "
+            "Career development goals included. Use goals.companyname.com"
+        )
+    elif "feedback" in query_lower:
+        return (
+            "Feedback Culture: Continuous feedback encouraged. Anonymous feedback tool available. "
+            "Regular 1:1s with manager. Peer recognition program. "
+            "Open door policy for performance concerns."
+        )
+    else:
+        return (
+            "Performance Management: Annual reviews, goal setting, feedback processes, "
+            "career development, promotion criteria. Ask about specific performance topics for details."
+        )
 
 # Minimal mock employee data for leave balance inquiry
 def get_leave_balance(user_id: str) -> str:
@@ -38,7 +134,82 @@ def calendar_api(query: str) -> str:
         return f"Company holidays include: {', '.join([h['name'] for h in COMPANY_HOLIDAYS])}, plus three floating holidays."
     return "Calendar information not found. Try asking about 'holidays' or 'next holiday'."
 
+# HR directory/contact lookup
+def get_hr_directory(query: str) -> str:
+    query_lower = query.lower()
+    contacts = {
+        "hr": "hr-support@companyname.com | Phone: (555) 123-4567 | Office: Building A, Floor 3",
+        "payroll": "payroll@companyname.com | Phone: (555) 123-4568 | Processing dates: 15th and 30th",
+        "benefits": "benefits@companyname.com | Phone: (555) 123-4569 | Open enrollment: Oct 1-31",
+        "it": "it-support@companyname.com | Phone: (555) 123-4570 | Help desk hours: 8 AM - 6 PM",
+        "facilities": "facilities@companyname.com | Phone: (555) 123-4571 | Building maintenance requests",
+        "learning": "learning@companyname.com | Phone: (555) 123-4572 | Training and development"
+    }
+    
+    for dept, info in contacts.items():
+        if dept in query_lower:
+            return f"{dept.upper()} Contact: {info}"
+    
+    return (
+        "HR Directory - Main contacts:\n" +
+        "\n".join([f"• {dept.upper()}: {info}" for dept, info in contacts.items()])
+    )
+
+# Employee handbook/policy lookup
+def get_policy_info(query: str) -> str:
+    query_lower = query.lower()
+    policies = {
+        "dress code": "Business casual. Jeans allowed on Fridays. No offensive clothing. Remote work: professional on video calls.",
+        "remote work": "Hybrid policy: 2-3 days in office, 2-3 days remote. Manager approval required. Core hours: 10 AM - 3 PM.",
+        "expense": "Use Expensify app. Receipts required for amounts >$25. Meals: $50/day limit. Travel pre-approval needed.",
+        "time off": "Submit requests 2 weeks in advance. Manager approval required. No PTO during month-end close periods.",
+        "overtime": "Non-exempt employees: OT approved in advance. Rate: 1.5x regular pay. Comp time available for exempt staff.",
+        "social media": "Personal accounts: don't mention company. Professional accounts: follow brand guidelines. No confidential info."
+    }
+    
+    for policy, details in policies.items():
+        if policy in query_lower or any(word in query_lower for word in policy.split()):
+            return f"{policy.title()} Policy: {details}"
+    
+    return (
+        "Available policies: Dress Code, Remote Work, Expense Reporting, Time Off, " +
+        "Overtime, Social Media. Ask about a specific policy for details."
+    )
+
+# Salary and compensation information
+def get_compensation_info(query: str) -> str:
+    query_lower = query.lower()
+    if "pay" in query_lower or "salary" in query_lower:
+        return (
+            "Salary Information: Pay reviews annually in March. " +
+            "Merit increases based on performance. Market adjustments considered. " +
+            "Salary bands available from your manager. Questions: payroll@companyname.com"
+        )
+    elif "bonus" in query_lower:
+        return (
+            "Bonus Structure: Annual performance bonus (0-20% of salary). " +
+            "Spot bonuses for exceptional work. Referral bonuses: $2,500 for successful hires. " +
+            "Paid in March with annual reviews."
+        )
+    elif "raise" in query_lower or "promotion" in query_lower:
+        return (
+            "Promotion Process: Annual review cycle, merit-based increases. " +
+            "Career ladder framework available. Internal mobility encouraged. " +
+            "Discuss career goals with manager during 1:1s."
+        )
+    else:
+        return (
+            "Compensation Topics: Salary information, bonus structure, promotion process, " +
+            "pay equity, market adjustments. Ask about specific compensation topics."
+        )
+
 tools = [
     Tool(name="GetLeaveBalance", func=get_leave_balance, description="How to check your leave balance. Input: employee ID (e.g., user123)"),
     Tool(name="CalendarAPI", func=calendar_api, description="Check company holidays and events. Input: query about holidays or calendar"),
+    Tool(name="BenefitsInfo", func=get_benefits_info, description="Get information about employee benefits (health, retirement, PTO, etc.). Input: benefits query"),
+    Tool(name="OnboardingInfo", func=get_onboarding_info, description="Get onboarding information for new employees (first day, paperwork, equipment, training). Input: onboarding query"),
+    Tool(name="PerformanceInfo", func=get_performance_info, description="Get information about performance reviews, goals, and feedback processes. Input: performance query"),
+    Tool(name="HRDirectory", func=get_hr_directory, description="Get HR department contact information and directory. Input: department or contact query"),
+    Tool(name="PolicyInfo", func=get_policy_info, description="Get company policy information (dress code, remote work, expenses, etc.). Input: policy query"),
+    Tool(name="CompensationInfo", func=get_compensation_info, description="Get information about salary, bonuses, promotions, and compensation. Input: compensation query"),
 ] 

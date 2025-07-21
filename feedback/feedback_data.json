@@ -304,5 +304,16 @@
       "GetLeaveBalance"
     ],
     "response_time": 2.5542800426483154
+  },
+  {
+    "timestamp": "2025-07-09T12:50:26.495783",
+    "session_id": "bce30778",
+    "user_query": "how do i apply for leave",
+    "bot_response": "To apply for leave, you need to follow these steps:\n\n1. Visit the HR Portal at hr.companyname.com.\n2. Log in using your company credentials.\n3. Navigate to: Time Off > Apply for Leave.\n4. Select the type of leave you want to apply for (e.g., Earned Leave, Casual Leave, Sick Leave).\n5. Choose the start date and end date for your leave.\n6. Optionally, add a reason or note for your leave.\n7. Click \"Submit for Approval.\"\n\nYour manager will receive a notification and must approve your leave request within 48 hours. You will receive a confirmation email once your request is approved or rejected. Remember to apply for leave at least 3 days in advance, except in emergencies. If you need further assistance, you can email the leave coordinator at leave-coordinator@companyname.com.",
+    "rating": 5,
+    "feedback_text": "no",
+    "escalation_triggered": false,
+    "tools_used": [],
+    "response_time": 5.939518928527832
   }
 ]
