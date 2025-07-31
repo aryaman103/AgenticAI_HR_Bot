@@ -26,7 +26,7 @@ def get_benefits_info(query: str) -> str:
     elif "retirement" in query_lower or "401k" in query_lower:
         return (
             "Retirement Benefits: 401(k) plan with 6% company match, immediate vesting. "
-            "Also includes traditional and Roth IRA options. "
+            "Also includes traditional and Roth IRA opti ons. "
             "Financial planning resources available through Fidelity."
         )
     elif "pto" in query_lower or "vacation" in query_lower:
@@ -164,7 +164,12 @@ def get_policy_info(query: str) -> str:
         "expense": "Use Expensify app. Receipts required for amounts >$25. Meals: $50/day limit. Travel pre-approval needed.",
         "time off": "Submit requests 2 weeks in advance. Manager approval required. No PTO during month-end close periods.",
         "overtime": "Non-exempt employees: OT approved in advance. Rate: 1.5x regular pay. Comp time available for exempt staff.",
-        "social media": "Personal accounts: don't mention company. Professional accounts: follow brand guidelines. No confidential info."
+        "social media": "Personal accounts: don't mention company. Professional accounts: follow brand guidelines. No confidential info.",
+        "discrimination": "Zero tolerance for discrimination based on protected grounds: Indigenous identity, race, colour, ancestry, place of origin, religion, family status, marital status, physical/mental disability, sex, age, sexual orientation, gender identity/expression, political belief, or criminal conviction unrelated to employment. Report violations to supervisor or HR immediately.",
+        "harassment": "Workplace free from harassment including inappropriate conduct causing humiliation or intimidation. Includes verbal aggression, derogatory names, malicious rumors, inappropriate materials, unwelcome sexual remarks. Report incidents to supervisor, next level management, or HR.",
+        "bullying": "Bullying includes conduct causing humiliation/intimidation, repeated behavior affecting well-being, or single serious incidents with lasting harmful effects. May be written, verbal, physical, online, or electronic. Excludes reasonable management direction.",
+        "workplace conduct": "All employees must treat others with respect and dignity. Conduct must meet acceptable social standards and contribute to positive work environment. Standards of Conduct must be followed at all times.",
+        "reporting procedure": "Step 1: Seek advice from supervisor, manager, or union. Step 2: Try informal resolution if safe. Step 3: Formal report to supervisor or excluded management. Step 4: Investigation and corrective action. Confidentiality maintained throughout process."
     }
     
     for policy, details in policies.items():
@@ -173,7 +178,7 @@ def get_policy_info(query: str) -> str:
     
     return (
         "Available policies: Dress Code, Remote Work, Expense Reporting, Time Off, " +
-        "Overtime, Social Media. Ask about a specific policy for details."
+        "Overtime, Social Media, Discrimination, Harassment, Bullying, Workplace Conduct, Reporting Procedure. Ask about a specific policy for details."
     )
 
 # Salary and compensation information
@@ -203,6 +208,36 @@ def get_compensation_info(query: str) -> str:
             "pay equity, market adjustments. Ask about specific compensation topics."
         )
 
+# Workplace safety and incident reporting
+def get_safety_info(query: str) -> str:
+    query_lower = query.lower()
+    if "incident" in query_lower or "report" in query_lower:
+        return (
+            "Incident Reporting: Report workplace incidents immediately to supervisor and HR. "
+            "Use incident report form available on intranet. For discrimination, bullying, or harassment: "
+            "Contact supervisor, next level management, or hr-support@companyname.com. "
+            "Anonymous reporting available through ethics hotline: 1-800-ETHICS."
+        )
+    elif "safety" in query_lower or "emergency" in query_lower:
+        return (
+            "Workplace Safety: Emergency exits marked with red signs. Fire extinguishers on each floor. "
+            "Emergency contact: Call 911. Building security: (555) 123-4571. "
+            "First aid kits located in break rooms. Report unsafe conditions immediately."
+        )
+    elif "discrimination" in query_lower or "harassment" in query_lower or "bullying" in query_lower:
+        return (
+            "Discrimination/Harassment/Bullying Reporting: Multiple reporting options available: "
+            "1) Direct supervisor or next level management, 2) HR department at hr-support@companyname.com, "
+            "3) Anonymous ethics hotline: 1-800-ETHICS, 4) Union representative if applicable. "
+            "Protection from reprisal guaranteed. Confidentiality maintained throughout investigation process."
+        )
+    else:
+        return (
+            "Safety Resources: Incident reporting procedures, emergency protocols, "
+            "discrimination/harassment reporting, workplace safety guidelines. "
+            "Ask about specific safety topics for details."
+        )
+
 tools = [
     Tool(name="GetLeaveBalance", func=get_leave_balance, description="How to check your leave balance. Input: employee ID (e.g., user123)"),
     Tool(name="CalendarAPI", func=calendar_api, description="Check company holidays and events. Input: query about holidays or calendar"),
@@ -210,6 +245,7 @@ tools = [
     Tool(name="OnboardingInfo", func=get_onboarding_info, description="Get onboarding information for new employees (first day, paperwork, equipment, training). Input: onboarding query"),
     Tool(name="PerformanceInfo", func=get_performance_info, description="Get information about performance reviews, goals, and feedback processes. Input: performance query"),
     Tool(name="HRDirectory", func=get_hr_directory, description="Get HR department contact information and directory. Input: department or contact query"),
-    Tool(name="PolicyInfo", func=get_policy_info, description="Get company policy information (dress code, remote work, expenses, etc.). Input: policy query"),
+    Tool(name="PolicyInfo", func=get_policy_info, description="Get company policy information including discrimination, harassment, bullying, workplace conduct, and reporting procedures. Input: policy query"),
     Tool(name="CompensationInfo", func=get_compensation_info, description="Get information about salary, bonuses, promotions, and compensation. Input: compensation query"),
+    Tool(name="SafetyInfo", func=get_safety_info, description="Get workplace safety information, incident reporting procedures, and discrimination/harassment reporting options. Input: safety or incident query"),
 ] 
