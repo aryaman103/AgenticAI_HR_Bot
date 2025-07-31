@@ -1,146 +1,251 @@
-EMPLOYEE HANDBOOK - HR POLICIES
+COMPREHENSIVE EMPLOYEE HANDBOOK - HR POLICIES
+Last updated: January 2025
 
-1. LEAVE POLICY
+WELCOME MESSAGE
 ===============
+Welcome to our organization! This handbook serves as your comprehensive guide to company policies, procedures, and benefits. We are committed to creating a positive, inclusive, and safe workplace where all employees can thrive and contribute to our shared success.
 
-1.1 Annual Leave
-- Full-time employees are entitled to 20 days of annual leave per year
-- Leave must be approved by your manager at least 2 weeks in advance
-- Unused leave can be carried forward to the next year (maximum 5 days)
+1. LEAVE AND TIME OFF POLICIES
+==============================
+
+1.1 Paid Time Off (PTO)
+- Unlimited PTO for full-time exempt employees
+- Minimum 3 weeks encouraged annually
+- Manager approval required for consecutive days exceeding 5
+- Non-exempt employees: Accrual-based PTO system
+- Submit requests at least 2 weeks in advance
 
 1.2 Sick Leave
-- Employees are entitled to 10 days of sick leave per year
-- Medical certificate required for absences longer than 3 consecutive days
-- Sick leave cannot be carried forward
+- 10 days paid sick leave annually for all employees
+- Unused sick days carry over up to 40 days maximum
+- Medical certificate required for absences exceeding 3 consecutive days
+- Can be used for employee or immediate family member illness
 
-1.3 Maternity/Paternity Leave
-- Maternity leave: 12 weeks paid leave
-- Paternity leave: 2 weeks paid leave
-- Additional unpaid leave available upon request
+1.3 Family and Medical Leave
+- Maternity Leave: 12 weeks paid at 100% salary
+- Paternity Leave: 6 weeks paid at 100% salary
+- Adoption Leave: 6 weeks paid at 100% salary
+- Family Medical Leave: Up to 12 weeks (job-protected)
+- Bereavement Leave: 5 days for immediate family, 3 days for extended family
 
-2. WORKING HOURS
-================
+1.4 Holidays
+- 12 paid company holidays annually
+- 3 floating holidays for personal use
+- Holiday schedule published by December 1st
+- Religious accommodation available
+
+2. WORKING HOURS AND FLEXIBILITY
+================================
 
 2.1 Standard Hours
-- Monday to Friday: 9:00 AM - 6:00 PM
-- 1-hour lunch break (12:00 PM - 1:00 PM)
-- Flexible working hours available with manager approval
+- Core business hours: 10:00 AM - 3:00 PM
+- Flexible start/end times with manager approval
+- Remote work options available (hybrid policy)
+- 40 hours per week standard for full-time employees
 
-2.2 Overtime
-- Overtime is paid at 1.5x regular rate
-- Maximum 10 hours overtime per week
-- Overtime must be pre-approved by manager
+2.2 Overtime and Premium Pay
+- Non-exempt employees: Overtime at 1.5x rate after 40 hours
+- All overtime must be pre-approved by supervisor
+- Holiday work: Double time for non-exempt employees
+- On-call pay: $2 per hour when on standby
 
-3. BENEFITS
-===========
+2.3 Remote Work Policy
+- Hybrid model: 2-3 days in office, 2-3 days remote
+- Manager approval required for remote arrangements
+- Home office setup allowance: $1,000 for eligible employees
+- Technology and equipment provided
 
-3.1 Health Insurance
-- Comprehensive health insurance coverage
-- Dental and vision included
-- Coverage for dependents available
+3. COMPREHENSIVE BENEFITS PACKAGE
+=================================
 
-3.2 Retirement Benefits
-- 401(k) matching up to 6% of salary
-- Vesting period: 3 years
-- Company contribution: 3% of salary
+3.1 Health and Wellness Benefits
+- Medical: PPO and HMO options, company pays 80% of premiums
+- Dental: Full coverage, company pays 100% for employee
+- Vision: Annual exams and allowances covered
+- Mental Health: EAP with 8 free sessions annually
+- Wellness programs and on-site fitness center
+
+3.2 Retirement and Financial Benefits
+- 401(k) with company matching up to 4.5% total
+- Immediate vesting of employee contributions
+- Additional 3% company contribution regardless of participation
+- Financial planning services and workshops
+- Stock purchase plan (if applicable)
 
 3.3 Professional Development
-- Annual training budget: $2,000 per employee
-- Conference attendance support
-- Certification reimbursement
+- Annual training budget: $2,500 per employee
+- Conference attendance support up to $3,000
+- Tuition reimbursement: 75% up to $5,000 annually
+- Internal mentorship and leadership programs
+- Professional certification support
 
-4. PERFORMANCE MANAGEMENT
-=========================
+3.4 Additional Benefits
+- Life insurance: 2x annual salary (company-paid)
+- Disability coverage: Short and long-term
+- Flexible Spending Accounts (Health and Dependent Care)
+- Employee recognition programs
+- Company-sponsored social events
 
-4.1 Performance Reviews
-- Annual performance reviews conducted in December
-- Mid-year check-ins in June
-- 360-degree feedback for senior positions
+4. PERFORMANCE MANAGEMENT AND DEVELOPMENT
+=========================================
 
-4.2 Performance Improvement
-- Performance improvement plans for underperforming employees
-- 90-day improvement period
-- Regular check-ins during improvement period
+4.1 Performance Review System
+- Annual comprehensive reviews in Q1 (January-March)
+- Mid-year check-ins in July
+- Quarterly 1:1s with direct supervisor
+- 30/60/90 day reviews for new employees
+- 360-degree feedback for leadership positions
 
-5. DISCIPLINARY PROCEDURES
-==========================
+4.2 Goal Setting and Objectives
+- SMART goals framework required
+- Individual Development Plans (IDPs) for all employees
+- Performance ratings: 5-point scale from Exceptional to Unsatisfactory
+- Merit increases based on performance and market positioning
 
-5.1 Progressive Discipline
-- Verbal warning
-- Written warning
-- Final written warning
-- Termination
+4.3 Performance Improvement
+- Performance Improvement Plans (PIPs) when needed
+- 60-90 day improvement timelines with clear objectives
+- Regular coaching and support during improvement process
+- Resources and training provided to support success
 
-5.2 Immediate Termination
-- Theft or fraud
-- Violence or threats
-- Drug or alcohol use at work
-- Gross misconduct
+5. COMPENSATION AND PAYROLL
+===========================
 
-6. EQUAL OPPORTUNITY
-====================
+5.1 Pay Structure
+- 15 pay grades with defined salary ranges
+- Market-competitive positioning (50th-75th percentile)
+- Annual merit review process in March
+- Promotion increases: Minimum 5% or new range minimum
 
-6.1 Non-Discrimination
-- Equal opportunity employer
-- No discrimination based on race, color, religion, sex, national origin, age, disability
-- Harassment-free workplace
+5.2 Payroll Administration
+- Bi-weekly pay periods (26 per year)
+- Direct deposit required
+- Electronic pay stubs via self-service portal
+- Expense reimbursement through automated system
 
-6.2 Accommodations
-- Reasonable accommodations for disabilities
-- Religious accommodations
-- Pregnancy accommodations
+5.3 Bonus and Incentive Programs
+- Annual performance bonus eligible for all employees
+- Target bonus: 3-25% of salary based on role level
+- Spot bonuses for exceptional contributions ($100-$2,500)
+- Sales incentive plans for applicable roles
 
-7. CONFIDENTIALITY
-==================
+6. WORKPLACE CONDUCT AND ETHICS
+===============================
 
-7.1 Company Information
-- All company information is confidential
-- Non-disclosure agreements required
-- Intellectual property protection
+6.1 Code of Conduct
+- Professional behavior expected at all times
+- Respectful treatment of all colleagues and stakeholders
+- Ethical decision-making and integrity in all actions
+- Compliance with all laws, regulations, and company policies
 
-7.2 Employee Privacy
-- Personal information kept confidential
-- Limited access to personnel files
-- Privacy in workplace communications
+6.2 Anti-Discrimination and Harassment
+- Zero tolerance for discrimination based on protected characteristics
+- Comprehensive harassment prevention and response procedures
+- Multiple reporting channels including anonymous options
+- Protection from retaliation for good faith reporting
+- Trauma-informed investigation processes
 
-8. SAFETY AND SECURITY
+6.3 Workplace Violence Prevention
+- Zero tolerance for violence, threats, or intimidation
+- Threat assessment and response procedures
+- Security measures and emergency protocols
+- Employee support resources and counseling
+
+7. SAFETY AND SECURITY
 ======================
 
-8.1 Workplace Safety
-- Safety training required for all employees
-- Incident reporting procedures
-- Emergency evacuation plans
+7.1 Workplace Safety
+- Comprehensive safety training for all employees
+- Personal protective equipment provided as needed
+- Incident reporting and investigation procedures
+- Emergency evacuation plans and regular drills
+- Safety committee with employee representation
 
-8.2 Security
-- ID badges required for building access
-- Visitor registration required
-- Computer and data security policies
+7.2 Security Policies
+- ID badge access control systems
+- Visitor registration and escort requirements
+- Information security and data protection protocols
+- Cybersecurity training and awareness programs
+- Physical security measures and procedures
 
-9. COMMUNICATION
-================
+8. CONFIDENTIALITY AND INFORMATION PROTECTION
+==============================================
+
+8.1 Confidential Information
+- Non-disclosure agreements required for all employees
+- Protection of company trade secrets and proprietary information
+- Customer and client information confidentiality
+- Intellectual property protection and development
+
+8.2 Data Privacy
+- Personal information protection for employees and customers
+- GDPR and privacy regulation compliance
+- Data handling and retention policies
+- Cybersecurity awareness and training requirements
+
+9. COMMUNICATION AND FEEDBACK
+=============================
 
 9.1 Internal Communication
-- Company-wide emails for important announcements
-- Intranet for policy updates
-- Regular team meetings
+- Regular all-hands meetings and company updates
+- Employee intranet and digital communication platforms
+- Open door policy with management
+- Anonymous feedback and suggestion systems
 
-9.2 Grievance Procedures
-- Informal resolution with manager
-- Formal grievance filing with HR
-- Appeal process available
+9.2 Grievance and Complaint Procedures
+- Multi-step process: informal resolution → formal complaint → appeal
+- HR investigation and resolution procedures
+- External reporting options (EEOC, labor boards, etc.)
+- Non-retaliation policy for good faith complaints
 
-10. TERMINATION
-===============
+10. EMPLOYEE DEVELOPMENT AND CAREER GROWTH
+==========================================
 
-10.1 Resignation
-- 2 weeks notice required
-- Exit interview conducted
-- Return of company property
+10.1 Career Development
+- Individual career planning with managers
+- Internal mobility and promotion opportunities
+- Cross-functional project assignments
+- Leadership development programs
 
-10.2 Termination
-- Severance pay based on years of service
-- COBRA continuation available
-- Final paycheck within 3 business days
+10.2 Learning and Development
+- New employee onboarding program (90-day process)
+- Ongoing skills training and development opportunities
+- Professional conference and workshop attendance
+- Educational assistance and tuition reimbursement
 
-This handbook is subject to change. Employees will be notified of any updates.
-For questions, contact HR at hr@company.com or call (555) 123-4567. 
+11. TERMINATION AND SEPARATION
+==============================
+
+11.1 Voluntary Resignation
+- 2 weeks notice required (4 weeks for management)
+- Exit interview process and feedback collection
+- Benefits continuation options (COBRA)
+- Return of company property and final payroll
+
+11.2 Involuntary Termination
+- Progressive discipline process with documentation
+- Severance packages based on tenure and circumstances
+- Outplacement services for eligible employees
+- Final paycheck timing per state requirements
+
+12. POLICY ADMINISTRATION
+========================
+
+12.1 Policy Updates and Changes
+- Annual policy review and update process
+- Employee notification of policy changes
+- Training on new or revised policies
+- Compliance monitoring and enforcement
+
+12.2 Contact Information and Resources
+- HR Department: hr@companyname.com | (555) 123-4567
+- Benefits Team: benefits@companyname.com | (555) 123-4569
+- Safety Hotline: 1-800-SAFE-TIP
+- Ethics Hotline: 1-800-ETHICS
+- Employee Portal: portal.companyname.com
+
+ACKNOWLEDGMENT
+==============
+This handbook replaces all previous versions and is subject to change. Employees will be notified of updates through official company communications. By continuing employment, employees acknowledge receipt and understanding of these policies.
+
+For detailed information on specific policies, please refer to the individual policy documents available on the employee portal or contact the HR department. 
