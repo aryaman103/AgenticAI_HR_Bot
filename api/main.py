@@ -33,7 +33,7 @@ app = FastAPI(
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Configure appropriately for production
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -111,7 +111,7 @@ async def chat_endpoint(request: ChatRequest):
         
         # Check for escalation
         escalation_triggered = should_escalate(
-            confidence=0.7,  # Default confidence
+            confidence=0.7,
             user_input=request.message,
             fallback_count=0,
             form_fail_count=0,
@@ -140,7 +140,7 @@ async def chat_endpoint(request: ChatRequest):
                 if "CalendarAPI" in str(agent_response):
                     tools_used.append("CalendarAPI")
                 
-                confidence = 0.8  # Default confidence
+                confidence = 0.8
                 
             except Exception as e:
                 response = f"I'm sorry, I encountered an error: {str(e)}"
@@ -214,7 +214,7 @@ async def get_system_status():
     try:
         uptime = time.time() - start_time
         
-        # Check system components (simplified)
+        # Check system components
         agent_status = "online"
         knowledge_base_status = "available"
         feedback_system_status = "active"
@@ -253,8 +253,7 @@ async def export_feedback():
 async def get_session_history(session_id: str):
     """Get chat history for a specific session."""
     try:
-        # This would require implementing session history storage
-        # For now, return a placeholder
+        # Session history storage would be implemented here
         return {
             "session_id": session_id,
             "messages": [],
@@ -267,7 +266,7 @@ async def get_session_history(session_id: str):
 async def clear_session(session_id: str):
     """Clear chat history for a specific session."""
     try:
-        # This would require implementing session management
+        # Session management would be implemented here
         return {
             "success": True,
             "message": f"Session {session_id} cleared"

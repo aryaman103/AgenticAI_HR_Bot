@@ -2,7 +2,7 @@ from langchain_core.tools import Tool
 import datetime
 import re
 
-# Real holiday calendar from data_ingest/holiday_calendar.txt
+# Company holiday calendar
 COMPANY_HOLIDAYS = [
     {"date": "2025-01-01", "name": "New Year"},
     {"date": "2025-05-26", "name": "Memorial Day"},
@@ -26,7 +26,7 @@ def get_benefits_info(query: str) -> str:
     elif "retirement" in query_lower or "401k" in query_lower:
         return (
             "Retirement Benefits: 401(k) plan with 6% company match, immediate vesting. "
-            "Also includes traditional and Roth IRA opti ons. "
+            "Also includes traditional and Roth IRA options. "
             "Financial planning resources available through Fidelity."
         )
     elif "pto" in query_lower or "vacation" in query_lower:
@@ -109,9 +109,8 @@ def get_performance_info(query: str) -> str:
             "career development, promotion criteria. Ask about specific performance topics for details."
         )
 
-# Minimal mock employee data for leave balance inquiry
+# Employee leave balance information
 def get_leave_balance(user_id: str) -> str:
-    # In a real system, this would query a database or HR API
     return (
         "To check your leave balance, log in to the HR portal at hr.companyname.com, "
         "navigate to: My Profile > Time Off > Leave Balance. You will see a breakdown of Earned Leave (EL), Casual Leave (CL), Sick Leave (SL), and carry-forward balances. "

@@ -84,22 +84,16 @@ if __name__ == "__main__":
         intent = "general" 
         response = None
 
-        # Example fallback detection (stub):
-        # If the agent can't answer, increment fallback_count
-        # Here, we just reset for demo
+        # Reset counters for demonstration purposes
         fallback_count = 0
-
-        # Example repeated intent/loop detection (stub):
+        form_fail_count = 0
+        
+        # Track repeated intents to detect conversation loops
         if last_intent == intent:
             repeated_intent_count += 1
         else:
             repeated_intent_count = 0
         last_intent = intent
-
-        # Example form fail detection (stub):
-        # If user fails to provide required info, increment form_fail_count
-        # Here, we just reset for demo
-        form_fail_count = 0
 
         escalation_triggered = False
         if should_escalate(
