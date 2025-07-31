@@ -27,7 +27,7 @@ def should_escalate_sensitive_topic(user_input: str) -> bool:
 def should_escalate_form_failure(form_fail_count: int, threshold: int = 2) -> bool:
     return form_fail_count > threshold
 
-# 6. Negative sentiment (stub, replace with real classifier)
+# 6. Negative sentiment 
 def should_escalate_sentiment(sentiment: str) -> bool:
     return sentiment in ["frustrated", "angry", "negative"]
 

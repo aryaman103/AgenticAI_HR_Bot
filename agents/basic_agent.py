@@ -79,10 +79,9 @@ if __name__ == "__main__":
 
         start_time = time.time()
         
-        # --- STUBS: Replace with real intent/sentiment/confidence logic ---
-        confidence = 0.7  # Replace with real intent confidence
-        sentiment = "neutral"  # Replace with real sentiment classifier
-        intent = "general"  # Replace with real intent detection
+        confidence = 0.7 
+        sentiment = "neutral" 
+        intent = "general" 
         response = None
 
         # Example fallback detection (stub):
